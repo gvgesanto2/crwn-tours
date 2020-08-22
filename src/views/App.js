@@ -1,11 +1,13 @@
 import React from 'react';
 
-import './App.scss';
+import Home from './pages/home/Home';
+import Navbar from './components/navbar/Navbar';
 
 const App = () => {
   return (
-    <div className="application">
-      <h1 className="heading-lg">Hello World</h1>
+    <div className="container">
+      <Navbar />
+      <Home />
     </div>
   );
 };

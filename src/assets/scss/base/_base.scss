@@ -12,3 +12,13 @@ html {
   // Defining 1rem=10px
   font-size: 62.5%;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $default-font-color;
+  cursor: pointer;
+}

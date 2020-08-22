@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: $navbar-height;
+  padding: 3rem;
+  background: $dark-grey-color-3;
+
+  &__options {
+    display: flex;
+    align-items: center;
+  }
+
+  &__options-item:not(:last-child) {
+    margin-right: 3rem;
+  }
+
+  &__options-link {
+    text-transform: uppercase;
+    color: $light-grey-color-1;
+
+    &--signup {
+      display: inline-block;
+      border: 1px solid currentColor;
+      border-radius: 100px;
+      padding: 1rem 3rem;
+      transition: all 0.3s;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        color: $dark-grey-color-1;
+        background: $light-grey-color-1;
+        border-color: $light-grey-color-1;
+
+        transform: translateY(-3px);
+      }
+
+      &:active {
+        transform: translateY(-1px);
+      }
+    }
+  }
+
+  &__logo {
+    width: 6rem;
+    height: 6rem;
+  }
+}
